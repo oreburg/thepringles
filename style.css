@@ -9,12 +9,6 @@
     height: auto;
 }
 
-.time-container {
-    text-align: center;
-    margin: 20px 0;
-    font-size: 1.2em;
-}
-
 #disqus_thread {
     max-width: 800px;
     margin: 40px auto;
