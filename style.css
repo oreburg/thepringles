@@ -1,10 +1,10 @@
-/* style.css */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
+.gif-container {
+    display: flex;
+    justify-content: center;
     padding: 20px;
 }
 
-h1 {
-    color: #333;
+.gif-container img {
+    max-width: 100%;
+    height: auto;
 }
