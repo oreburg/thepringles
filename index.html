@@ -9,5 +9,40 @@
     <div class="gif-container">
         <img src="images/pringles-ladies.gif" alt="프링글스 댄스">
     </div>
+
+    <!-- 현재 시간 표시 -->
+    <div class="time-container">
+        <p id="current-time">현재 시간: </p>
+    </div>
+
+    <!-- Disqus 댓글 섹션 -->
+    <div id="disqus_thread"></div>
+    <script>
+        var disqus_config = function () {
+            this.page.url = "https://oreburg.github.io/thepringles/";  // 실제 페이지 URL
+            this.page.identifier = "thepringles-main"; // 페이지 구분자
+        };
+        (function() {
+            var d = document, s = d.createElement('script');
+            s.src = 'https://oreburg-1.disqus.com/embed.js';
+            s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+    <!-- 시간 표시 스크립트 -->
+    <script>
+        function updateTime() {
+            const now = new Date();
+            const timeString = now.toLocaleString('ko-KR');
+            document.getElementById('current-time').textContent = '현재 시간: ' + timeString;
+        }
+        updateTime();
+        setInterval(updateTime, 1000);
+    </script>
+
+    <!-- Disqus 댓글 수 표시 스크립트 -->
+    <script id="dsq-count-scr" src="//oreburg-1.disqus.com/count.js" async></script>
 </body>
 </html>
