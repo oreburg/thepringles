@@ -10,26 +10,22 @@
         <img src="images/pringles-ladies.gif" alt="프링글스 댄스">
     </div>
 
-    <!-- 1. 이 곳에 Disqus를 로드하라고 했습니다 -->
     <div id="disqus_thread"></div>
     <script>
-        /**
-        *  2. 권장 설정 변수들을 수정하라고 했습니다 */
         var disqus_config = function () {
-        this.page.url = "https://oreburg.github.io/thepringles/";  // 실제 페이지 URL로 교체
-        this.page.identifier = "thepringles-home"; // 페이지 고유 식별자
+        this.page.url = "https://oreburg.github.io/thepringles/";  
+        this.page.identifier = "thepringles-home"; 
         };
 
-        (function() { // DON'T EDIT BELOW THIS LINE
+        (function() { 
         var d = document, s = d.createElement('script');
-        s.src = 'https://oreburg-1.disqus.com/embed.js';
+        s.src = 'https://oreburg-1.disqus.com/embed.js';  // Shortname이 oreburg-1이라서 이게 맞습니다!
         s.setAttribute('data-timestamp', +new Date());
         (d.head || d.body).appendChild(s);
         })();
     </script>
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
-    <!-- 3. 이 코드는 </body> 태그 직전에 넣으라고 했습니다 -->
     <script id="dsq-count-scr" src="//oreburg-1.disqus.com/count.js" async></script>
 </body>
 </html>
