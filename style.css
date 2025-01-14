@@ -14,10 +14,28 @@
     margin: 40px auto;
     padding: 0 20px;
 }
+.gif-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.gif-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+#disqus_thread {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
 .title-container {
-    text-align: center;    
+    display: flex;           /* 추가 */
+    justify-content: center; /* 추가 */
+    width: 100%;            /* 추가 */
     margin: 20px auto;     
-    max-width: 800px;      
     padding: 0 20px;       
 }
 
@@ -26,5 +44,7 @@
     color: #333;
     font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;  
     font-weight: 500;                                          
-    letter-spacing: -0.5px;                                    
+    letter-spacing: -0.5px;
+    text-align: center;     /* 추가 */
+    margin: 0;             /* 추가 */
 }
