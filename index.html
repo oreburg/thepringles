@@ -10,18 +10,16 @@
         <img src="images/pringles-ladies.gif" alt="프링글스 댄스">
     </div>
 
-    <!-- Disqus가 제공한 정확한 코드 -->
+    <!-- 1. 이 곳에 Disqus를 로드하라고 했습니다 -->
     <div id="disqus_thread"></div>
     <script>
         /**
-        *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-        *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables    */
-        /*
+        *  2. 권장 설정 변수들을 수정하라고 했습니다 */
         var disqus_config = function () {
-        this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-        this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        this.page.url = "https://oreburg.github.io/thepringles/";  // 실제 페이지 URL로 교체
+        this.page.identifier = "thepringles-home"; // 페이지 고유 식별자
         };
-        */
+
         (function() { // DON'T EDIT BELOW THIS LINE
         var d = document, s = d.createElement('script');
         s.src = 'https://oreburg-1.disqus.com/embed.js';
@@ -31,7 +29,7 @@
     </script>
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
-    <!-- Disqus 댓글 수 표시 스크립트 -->
+    <!-- 3. 이 코드는 </body> 태그 직전에 넣으라고 했습니다 -->
     <script id="dsq-count-scr" src="//oreburg-1.disqus.com/count.js" async></script>
 </body>
 </html>
